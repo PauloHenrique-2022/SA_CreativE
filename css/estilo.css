@@ -1,0 +1,15 @@
+body{
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background: #333;
+}
+
+.cardbox{
+    float: left;
+    font-size: 1.2em;
+    margin: 1% 0 0 1%;
+    perspective: 800px;
+    transition: all 0.3s ease 0s;
+    width: 23.7%;
+}
