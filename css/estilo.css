@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box; /* tira os contornos das div */
+    margin:0;
+    padding:0;
+}
+
+ body,html{
+    background-image:url(/Imagens/fundo-azul-2.jpg);
+    /* background-repeat: no-repeat; */
+    background-size: cover; 
+    /* background-position: center; */
+}
+
+.container{
+    display: grid;
+    grid-template-areas: " m " " n " " c1 " " c2 " "c3" " c4 " " c5 "   " c6 " " r ";    /*para adicionar ao lado basta colocar mais letra no lado ex: " m m " ficara com 2 colunas*/
+    /* grid-template-columns: 1fr; */  /* serve para dividir em coluna o site*/
+    /* grid-template-rows: auto; */  /* serve para di"vidir em linhas o site*/
+    /* gap: 1px; */ /*serve para deixar um espaço entre as divs*/
+}
+
+header{
+    display: grid;
+    grid-area: m;
+    background-color:rgb(4, 4, 253); 
+    height: 30px;
+    width: 100%;
+    justify-content: center; /*Para alinhar na HORIZONTAL*/
+    align-content: center; /*Para alinhar na VERTICAL */
+}
+
+nav{
+    display: grid;
+    grid-area: n;
+    background-color:rgb(4, 253, 46); 
+    height: 50px;
+    position: -webkit-sticky; /* for Safari */
+    position: sticky;
+    top: 0;
+    justify-content: center; /*Para alinhar na HORIZONTAL*/
+    align-content: center; /*Para alinhar na VERTICAL */
+}
+
+.criacao{
+    display: grid;
+    grid-area: c1;
+    justify-content: center; /*Para alinhar na HORIZONTAL*/
+    height:400px;
+    background-color: rgb(8, 118, 243);
+}
+
+section{
+    display: grid;
+    grid-area: c2;
+    justify-content: center; /*Para alinhar na HORIZONTAL*/
+    height:1000px;
+    background-color: rgb(228, 243, 13);
+}
+
+article{
+    display: grid;
+    grid-area: c3;
+    justify-content: center; /*Para alinhar na HORIZONTAL*/
+    height:1250px;
+    background-color: coral;
+}
+
+.metodologia{
+    display: grid;
+    grid-area: c3;
+    justify-content: center; /*Para alinhar na HORIZONTAL*/
+    height:400px;
+    background-color: rgb(10, 118, 241);
+}
+
+.portifolio{
+    display: grid;
+    grid-area: c4;
+    justify-content: center; /*Para alinhar na HORIZONTAL*/
+    height:200px;
+    background-color: rgb(68, 2, 46);
+}
+
+.nossosplanos{
+    display: grid;
+    grid-area: c5;
+    justify-content: center; /*Para alinhar na HORIZONTAL*/
+    height:800px;
+    background-color: rgb(248, 12, 12);
+}
+
+.contato{
+    display: grid;
+    grid-area: c6;
+    justify-content: center; /*Para alinhar na HORIZONTAL*/
+    height:300px;
+    background-color: rgb(79, 248, 12);
+}
+
+footer{
+    display: grid;
+    grid-area: r;
+    justify-content: center; /*Para alinhar na HORIZONTAL*/
+    height:50px;
+    background-color:orangered;
+    }
+
+
+
+/*                             RESPONSIVO                             */
+
+    @media only screen and ( max-width:800px){
+        .container{
+
+        }
+    }
+
+    @media only screen and ( max-width:400px){
+        header{
+            display:none;
+        }
+        .container{
+            grid-template-areas: " n " " c1 " " c2 " "c3" " c4 " " c5 "   " c6 "" r ";
+        }
+    }
+
+    @media (max-width: 116px){}
+
+
+
+
+    /*                    ALINHAMENTO USANDO O GRID                   */
+    /* align-items: end; */
+    /* align-items: center; */
+    /* align-items: start; */
+
+    /* align-content: center; */;
+    /* align-content: start; */
+    /* align-content: end; */
+
+    /* justify-items: center; */
+    /* justify-items: end; */
+    /* justify-items: start; */
+
+    /* justify-content: center; */
+    /* justify-content: end; */
+    /* justify-content: start; */
+
+    /* align-self: center; */
+    /* justify-self: center; */
+    /* align-content: center; */
+
+
+
+
