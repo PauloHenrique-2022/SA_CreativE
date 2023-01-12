@@ -1,17 +1,22 @@
+/* Fontes do google */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600&display=swap');
+
 /*CORES DO SITE*/
 :root {
     --border-btn: orange; /*Cor do traço em cima do menu*/
     --cor-preto: black; /*Cor preto padrão do site*/
     --cor-azul: blue; /*Cor azul padrão do site */
+    /* TEXTOS*/
     --cor-txt-menu: white; /*Cor para texto branco do site*/
     --cor-txt-menu-esc: black; /*Cor para texto preto do site*/
-    --cor-txt-orange: orange; /*Cor para texto do menu cascata do site*/
+    --cor-txt-orange: orange; /*Cor para texto over no menu*/
     --cor-txt-topo: white; /* Cor para texto do topo do site*/
   }
 
   body, ul{
     margin: 0px;
     padding: 0px;
+    font-family: 'Poppins', sem serifa,Arial;
   }
 
 
@@ -25,22 +30,21 @@
     justify-items: center; 
     justify-content: space-around; 
     background-color: var(--cor-azul);
-   }
+  }
 
 
 .topo a{
     text-decoration: none;
-    font-family: Proxima Nova,Verdana,Avenir Next;
     color: var(--cor-txt-topo);
   }
   
 .topo #login a:hover{
-    color: rgb(36, 35, 35);
+    color: var(--cor-txt-orange);
     background: none;
   }
 
 .topo, #btn_cadastro a:hover{
-    color: rgb(18, 18, 19);
+    color: var(--cor-txt-orange);
 
   }
 
@@ -62,8 +66,7 @@
     width: 200px;
     height: 20px;
     text-align: center;
-    line-height: 110%;/* Para alinhar na vertical */
-    font-family: Proxima Nova,Verdana,Avenir Next;
+    line-height: 125%;/* Para alinhar na vertical */
     font-size: 0.9em;
     font-weight:500;
     color: var(--cor-txt-topo);
@@ -91,7 +94,6 @@
     box-sizing: border-box;
     color: var(--cor-txt-menu);
     text-decoration: none;
-    font-family: sans-serif;
     position: relative;
   }
   
@@ -111,7 +113,8 @@
   }
   
   a:hover{
-    color: gray;
+    color: var(--cor-txt-orange);
+    /* color: gray; */
     background: rgba( 0,0,0,0.05);
   /* border-top: 1px solid var(--border-btn); */
   }
