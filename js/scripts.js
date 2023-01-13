@@ -1,3 +1,5 @@
+// para o menu hambuguer
+
 const btnMobile = document.getElementById('btn-mobile');  // Paara acessar um elemento do HTML --- aqui ta selecionado o id="btn-mobile" e colocando dentro da variavel btnMobile
 
 
@@ -23,4 +25,6 @@ if (active) {
 btnMobile.addEventListener('click', toggleMenu);  // aqui ele vai ficar esperando um evento de click para qdo for clicado ele vai ativa a função (toggleMenu) agora tem que criar essa função (toggleMenu)
 
 btnMobile.addEventListener('touchstart', toggleMenu); // para qdo for usar no smartphone pq so (click) demorar 300ms para acionar com o touchstart e mais rapido a resposta de clique
+
+// fecha menu hambuguer
 

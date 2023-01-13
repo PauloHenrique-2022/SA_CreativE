@@ -11,14 +11,13 @@
     --cor-txt-menu-esc: black; /*Cor para texto preto do site*/
     --cor-txt-orange: orange; /*Cor para texto over no menu*/
     --cor-txt-topo: white; /* Cor para texto do topo do site*/
-  }
+}
 
-  body, ul{
+body, ul{
     margin: 0px;
     padding: 0px;
     font-family: 'Poppins', sem serifa,Arial;
-  }
-
+}
 
 .topo{
     display: grid;
@@ -30,28 +29,25 @@
     justify-items: center; 
     justify-content: space-around; 
     background-color: var(--cor-azul);
-  }
-
+}
 
 .topo a{
     text-decoration: none;
     color: var(--cor-txt-topo);
-  }
-  
+}
+
 .topo #login a:hover{
     color: var(--cor-txt-orange);
     background: none;
-  }
+}
 
 .topo, #btn_cadastro a:hover{
     color: var(--cor-txt-orange);
-
-  }
+}
 
 #btn_cadastro a{
     padding-left: 15px;
-  }
-
+}
 
 .espaco_transp{
    /* background-color:green; */
@@ -59,8 +55,8 @@
     height: 100%;
     text-align: center;
     line-height: 100%;/* Para alinhar na vertical */
-  }
-  
+}
+
 .espaco1,.espaco2{
     /* background-color: yellow; */
     width: 200px;
@@ -73,11 +69,8 @@
     cursor: pointer;
     padding-left: 50px;
     margin-left: 150px;
-  }
-  
-.espaco2{
-      /* margin-left:100px; */
-  }
+}
+
 .espaco1{
     margin-right: 100px;
     padding-bottom: 5px;
@@ -89,15 +82,19 @@
     padding: 1px;
 }
 
-  /* fonte para fazer a linha do MENU https://www.youtube.com/watch?v=AEM3ssmyFMo */
-  nav a {
+  /* LINHA DO MENU COM EFEITO */
+
+nav{
+  position:static;
+}
+nav a {
     box-sizing: border-box;
     color: var(--cor-txt-menu);
     text-decoration: none;
     position: relative;
-  }
-  
-  nav a::after{
+}
+
+nav a::after{
     content:" ";
     width: 0%;
     height: 1px;
@@ -106,27 +103,26 @@
     top: 0;
     left: 0;
     transition: 0.5s ease-in-out;
-  }
-  
-  nav a:hover::after{
+}
+
+nav a:hover::after{
     width: 100%;
-  }
-  
-  a:hover{
+}
+
+a:hover{
     color: var(--cor-txt-orange);
     /* color: gray; */
     background: rgba( 0,0,0,0.05);
   /* border-top: 1px solid var(--border-btn); */
-  }
-  
-  
-  #logo{
-      font-size: 1.5rem;
-      font-weight: bold;
-      color: aliceblue;
-  }
-  
-  #header{
+}
+
+#logo{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: aliceblue;
+}
+
+#header{
     box-sizing: border-box;/* Para nao somar o height com o padding */
     height: 70px;
     padding: 1rem; /* 1rem tem o valor de 16 px como PADRAO */
@@ -134,34 +130,45 @@
     align-items: center; /* Alinhar na vertical */
     justify-content: space-between; /* Espaçamento cada um para as extremidades horizontal */
     background: var(--cor-preto); /*Fundo do MENU*/
-  }
-  
-  #menu {
+}
+
+#menu {
     display:flex;
     list-style:none;
     gap: .5rem;
-    
-  }
-  
-  #menu a {
+}
+
+#menu a {
     display: block;
     padding: .5rem;
-  }
-  
-  #btn-mobile{
-    display: none;
-  }
-  
+}
 
-  #cadastro{
-    display: none;
-   }
-   
-   #log{
+#btn-mobile{
     display: none;
 }
 
-    /*QDO for menor que 800px vai fazer isso!!! A baixo*/
+#cadastro{
+    display: none;
+}
+
+#log{
+    display: none;
+}
+
+
+
+/*PARTE DO MAIN DO SITIE*/
+.criacao{
+    height: 1500px;
+    width: 1600px;
+    background-color: black;
+
+
+}
+
+
+
+/*QDO for menor que 800px vai fazer isso!!! A baixo*/
 
 @media (max-width:800px){
 
@@ -170,8 +177,7 @@
       height: 25px;
       padding-left: 2px;
       padding-top:5px;
-
-}
+  }
 
     .espaco1,.espaco2{
         /* background-color: yellow; */
@@ -181,65 +187,64 @@
   }
 
     .espaco2{
-        margin-left: 20px;
-    }
+      margin-left: 20px;
+  }
 
     .espaco2 #login a{
-        padding-left:100px ;
-        font-size: 1.2em;
-       }
+      padding-left:100px ;
+      font-size: 1.2em;
+  }
 
-       .espaco2 #btn_cadastro a{
-        display: none;
-        padding-right: 100px;
-       }
+    .espaco2 #btn_cadastro a{
+      display: none;
+      padding-right: 100px;
+  }
 
 }
 
-      /*QDO for menor que 700px vai fazer isso!!! A baixo*/
+/*QDO for menor que 700px vai fazer isso!!! A baixo*/
 
 @media (max-width:700px){
 
     .topo{
-        display: grid;
-        grid-template-columns: 100px 200px;
-        grid-template-rows: 30px;
-        /*  grid-gap: 10px;*/
-        /*   justify-content: center;alinhar na horizontal*/
-        align-items:center;
-        justify-items: center; 
-        justify-content: space-around; 
-        background-color: var(--cor-azul);
-       }
+      display: grid;
+      grid-template-columns: 100px 200px;
+      grid-template-rows: 30px;
+      /*  grid-gap: 10px;*/
+      /*   justify-content: center;alinhar na horizontal*/
+      align-items:center;
+      justify-items: center; 
+      justify-content: space-around; 
+      background-color: var(--cor-azul);
+  }
 
-       .espaco_transp{
-        display: none;
-       }
+    .espaco_transp{
+      display: none;
+  }
 
-       .espaco1{
-        margin-left: 20px ;
-       }
+    .espaco1{
+      margin-left: 20px ;
+  }
 
-       #perguntas{
-        display: none;
-       }
+    #perguntas{
+      display: none;
+  }
 
-       #clientes{
-        display: none;
-    }
+    #clientes{
+      display: none;
+  }
 
 }
 
 
-  /*QDO for menor que 500px vai fazer isso!!! A baixo*/
-  @media (max-width:500px){
-      
-.topo{
-     display:none;  
-    }
+/*QDO for menor que 500px vai fazer isso!!! A baixo*/
+@media (max-width:500px){
 
+    .topo{
+      display:none;  
+  }
 
-#menu{
+    #menu{
       display: block;
       /*display: block;*/ /* Fica em bloco */
       position: absolute; /* Para ficar em cima de tudo que tiver na tela */
@@ -252,21 +257,21 @@
       z-index: 1000; /* Qto mais alto o numero garante que ele fique acima de todos elemento da tela */
       visibility: hidden; /* Vai começar escondido */
       overflow-y: hidden; /* Para esconder ate o fim do movimento */
-    }
-    
+  }
+
     #nav.active #menu{ /* Qdo (NAV) tiver com a classe active ATIVO mude isso no id="menu" */
-  /*     display: block;  */
+      /*     display: block;  */
       height: calc(100vh - 70px); /* Aqui a animção vai ficar com efeito de aparecer aos poucos */
       visibility: visible; /* Aqui vai fazer aparecer o efeito de movimento */
       overflow-y: auto; /* Para aparecer todos os elementos e a barra de rolagem */
-    }
-    
+  }
+
     #menu a{
       padding: 1rem 0;
       margin:  0 1rem;
       border-bottom: 2px solid rgba(0,0,0,.05);
-    }
-    
+  }
+
     #btn-mobile{
       display: flex;/* para ficar um do lado do outro */
       padding: .5rem 1rem;
@@ -277,16 +282,15 @@
       cursor: pointer;
       gap: .5rem;
   }
-  
+
     #hambuger{
       display: block;
       width: 20px;
       border-top: 2px solid;
       color: white;
-    }
-    
+  }
     /* PSEUDO elemento para criar elemento dentro de outro elemento*/
-    
+
     #hambuger::after, #hambuger::before {
       content:'';/* tem que ter algum conteudo ou deixar vazio para aparecer oq vc configurou */
       display: block;
@@ -296,37 +300,35 @@
       margin-top: 6px; /*  Espaçamento entre os elementos */
       transition: .3s; /* Para a animação do 3 traços para vira o X */
       position: relative;/* Para o top funcionar tem que usar position absolute ou relative */
-      
-    }
-    
+  }
+
     #nav.active #btn-mobile{
         color: rgba( 255, 140, 0, 1)
-    }
+  }
 
     #nav.active #hambuger{ /*Qdo o Nav tiver a classe active vai acontecer isso com o botao #hambuger */
-
       /*background: blue;*/
       border-top: transparent;/* Para sumir o traço do topo do menu*/
-    }
-    
-      #nav.active #hambuger::before {
-       transform: rotate(135deg);
-        color: red;
-    }
-    
+  }
+
+    #nav.active #hambuger::before {
+      transform: rotate(135deg);
+      color: red;
+  }
+
     #nav.active #hambuger::after{
       transform: rotate(-135deg);
       top: -7px; /* Para poder transformar no X centralizado --- Mais para isso funcionar tem que ter um posicão absolute ou relativo*/
       color: red;
-    }
-    
-  #cadastro{
-    display: block;
-   }
+  }
+
+    #cadastro{
+      display: block;
+  }
    
-   #log{
-    display: block;
-}
+    #log{
+      display: block;
+  }
 
   }
 
