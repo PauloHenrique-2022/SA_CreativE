@@ -73,7 +73,7 @@ body, ul{
 
 .espaco1{
     margin-right: 100px;
-    padding-bottom: 5px;
+    padding-bottom: -1em;
 }
 
 .espaco1 img{
@@ -173,11 +173,15 @@ a:hover{
 @media (max-width:800px){
 
     .espaco1 img{
+      transition: 2s;
       width: 25px;
       height: 25px;
+      transition: 1s;
       padding-left: 2px;
-      padding-top:5px;
+      transition: 1s;
+      padding-top:3px;
   }
+
 
     .espaco1,.espaco2{
         /* background-color: yellow; */
@@ -196,6 +200,7 @@ a:hover{
   }
 
     .espaco2 #btn_cadastro a{
+      transition: 5s ease-in;
       display: none;
       padding-right: 100px;
   }
@@ -207,11 +212,13 @@ a:hover{
 @media (max-width:700px){
 
     .topo{
+      transition: 2s ease-out;
       display: grid;
       grid-template-columns: 100px 200px;
       grid-template-rows: 30px;
       /*  grid-gap: 10px;*/
       /*   justify-content: center;alinhar na horizontal*/
+    
       align-items:center;
       justify-items: center; 
       justify-content: space-around; 
@@ -223,6 +230,7 @@ a:hover{
   }
 
     .espaco1{
+      transition: 2s ease-in-out;
       margin-left: 20px ;
   }
 
